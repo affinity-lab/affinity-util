@@ -1,10 +1,10 @@
 {
 	"name": "@affinity-lab/affinity-util",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"author": "Affinity Lab",
 	"main": "dist/index",
 	"scripts": {
-		"build": "npx tsc && npm version patch",
+		"build": "npx tsc && npm version patch --no-git-tag-version",
 		"prebuild": "rimraf ./dist"
 	},
 	"files": [
