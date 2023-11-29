@@ -1,4 +1,3 @@
-export * from "./convert";
 export * from "./env";
 export * from "./file-descriptor";
 export * from "./geometry";
