@@ -8,7 +8,7 @@ const path_1 = __importDefault(require("path"));
 const fast_glob_1 = __importDefault(require("fast-glob"));
 function loadModuleDefaultExports(dir) {
     const modules = [];
-    const records = fast_glob_1.default.globSync(path_1.default.join(dir + "/*.{ts,js}"));
+    const records = fast_glob_1.default.globSync(path_1.default.join(dir + "/*.{ts,js}").replaceAll("\\", "/"));
     records.map(async (filename) => {
         let module = require(filename).default;
         modules.push(module);
