@@ -1,4 +1,4 @@
-import {Coder} from "../transfer";
+import {Coder} from "../coder";
 
 export class DateCoder extends Coder {
 	readonly type = "date";
